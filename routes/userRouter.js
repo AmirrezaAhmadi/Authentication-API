@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post("/register", userController.register);
 
-router.get("/login", userController.login);
+router.post("/login", userController.login);
 
 router.get("/profile", isAuthenticated ,userController.profile);
 
